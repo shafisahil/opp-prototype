@@ -16,11 +16,6 @@ btn.addEventListener('click', function(){
             this.firstName = firstName;
             this.lastName = lastName;
             this.dateOfBirth = new Date (dob)
-        //     this.age = function() {
-        //     const difference  = Date.now() - this.dateOfBirth.getTime()
-        //       const ageDate = new Date(difference)
-        //       return ageDate.getUTCFullYear() - 1970
-        // }
 
     }
      Fullname.prototype.age  = function () {
@@ -30,9 +25,15 @@ btn.addEventListener('click', function(){
     }
 
     Fullname.prototype.fulname = function(){
-        return `${this.firstName} ${this.lastName}`
+        return `helo ${this.firstName} ${this.lastName} welcome. your age is ${this.dateOfBirth} `
     }
      const shafi = new Fullname (firstianputNam, lastInputNam, intputAges)
      firstOutputName.textContent = shafi.fulname();
      outputAge.textContent = shafi.age();
-});
+
+     function Web(job,jender){
+         this.job =job;
+         this.gender = jender
+     }
+
+    });
