@@ -25,7 +25,7 @@ btn.addEventListener('click', function(){
     }
 
     Fullname.prototype.fulname = function(){
-        return `helo ${this.firstName} ${this.lastName} welcome. your age is ${this.dateOfBirth} `
+        return `helo ${this.firstName} ${this.lastName} welcome. your landing time ${this.dateOfBirth} `
     }
      const shafi = new Fullname (firstianputNam, lastInputNam, intputAges)
      firstOutputName.textContent = shafi.fulname();
